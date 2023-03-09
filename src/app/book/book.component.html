@@ -7,20 +7,33 @@
    <title>Document</title>
 </head>
 <body>
-    <div class="container">b
+    <style>
+        table {
+            font-family:Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border:1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+    <div class="container">
         <table class="table table-striped">
         <thead>
             <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>shortName</th>
+                <th>Department_id</th>
+                <th>Department_name</th>
+                <th>Department_shortName</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let book of books">
-                <th>{{book.id}}</th>
-                <th>{{book.name}}</th>
-                <th>{{book.shortName}}</th>
+                <th>{{book.dept_id}}</th>
+                <th>{{book.dept_name}}</th>
+                <th>{{book.dept_shortName}}</th>
 
             </tr>
         </tbody>
