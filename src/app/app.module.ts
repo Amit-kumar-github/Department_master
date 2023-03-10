@@ -5,26 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookComponent } from './book/book.component';
 import {HttpClientModule} from '@angular/common/http';
-import { RegistrationComponent } from './registration/registration.component';
-import { SearchDeleteComponent } from './search-delete/search-delete.component';
-import { UserRegistrationService } from './user-registration.service';
 import { FormsModule } from '@angular/forms';
+import { DepartmentComponent } from './department/department.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BookComponent,
-    RegistrationComponent,
-    SearchDeleteComponent
+    DepartmentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule
   ],
-  providers: [UserRegistrationService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchDeleteComponent } from './search-delete.component';
+import { DepartmentComponent } from './department.component';
 
-describe('SearchDeleteComponent', () => {
-  let component: SearchDeleteComponent;
-  let fixture: ComponentFixture<SearchDeleteComponent>;
+describe('DepartmentComponent', () => {
+  let component: DepartmentComponent;
+  let fixture: ComponentFixture<DepartmentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchDeleteComponent ]
+      declarations: [ DepartmentComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SearchDeleteComponent);
+    fixture = TestBed.createComponent(DepartmentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

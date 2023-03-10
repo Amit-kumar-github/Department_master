@@ -1,0 +1,25 @@
+<form #departmentMasterForm="ngForm" (ngSubmit)="formSubmit()">
+    <h1 class="department">Department Master</h1> 
+      <div>
+      <mat-label class="label1">Add New DepartMent</mat-label>
+      <mat-form-field class="full-width" appearance="outline">
+      <input required  [(ngModel)]="dept.dept_shortName" name="dept_shortName" matInput placeholder="Department short Name">
+      
+      <mat-form-field class="full-width" appearance="outline">
+        <input required  [(ngModel)]="dept.dept_name" name="dept_name" matInput placeholder="Department Name">  
+                      
+      </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <button mat-raised-button color="primary">Add</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+      <button mat-raised-button color="primary">Update</button>
+    </div>   
+  </form>
+  <!-- For List of Department-->
+  <form #departmentMaster="ngForm">
+    <div>
+      <mat-label class="label1">List of Department</mat-label>
+      <mat-form-field class="full-width" appearance="outline">
+      <input required type="search"[(ngModel)]="searchText" matInput placeholder="Department">                   
+      </mat-form-field>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<button mat-raised-button color="primary">Search </button>    
+  
+    </div>
