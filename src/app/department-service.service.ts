@@ -10,7 +10,7 @@ export class DepartmentServiceService {
   constructor(private http:HttpClient) { }
 
   addDept(dept:any){
-    return this.http.post(`http://localhost:8080/apiSave/api/create`,dept);
+    return this.http.post(`http://localhost:8080/apiSave`,dept);
   }
 
   }
