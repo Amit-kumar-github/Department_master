@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { SearchPipe } from './search.pipe';
 
 
 
@@ -19,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
     AppComponent,
     BookComponent,
     DepartmentComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,

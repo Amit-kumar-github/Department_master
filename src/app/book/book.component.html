@@ -15,12 +15,15 @@
   </form>
   <!-- For List of Department-->
   <form #departmentMaster="ngForm">
-    <div>
-      <mat-label class="label1">List of Department</mat-label>
-      <mat-form-field MatFormFieldControl class="full-width" appearance="outline">
-      <input required type="search" matInput placeholder="Department">                   
+    <div >
+      <mat-label class="label1 " >List of Department</mat-label>
+      <mat-form-field MatFormFieldControl class="full-width " appearance="outline">
+      <input required name="search" type="text" matInput placeholder="Search Department" [(ngModel)]="searchText">     
+     
       </mat-form-field>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<button mat-raised-button color="primary">Search </button>    
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<button mat-raised-button color="primary">Search </button>
+
   
     </div>
     </form>
@@ -60,7 +63,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let book of books">
+            <tr *ngFor="let book of books | search: searchText">
                 <th>{{book.dept_id}}</th>
                 <th>{{book.dept_name}}</th>
                 <th>{{book.dept_shortName}}</th>
