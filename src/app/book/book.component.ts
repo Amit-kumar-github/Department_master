@@ -40,6 +40,15 @@ export class BookComponent implements OnInit {
 }
 
 searchText='';
+delete(j:any)
+{
+ // console.log(j);
+ this.departmentService.deleteData(j).subscribe((data)=>{
+  console.log(data);
+ });
+
+}
+
 
   
 }
